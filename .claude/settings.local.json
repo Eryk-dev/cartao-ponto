@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(/Library/Frameworks/Python.framework/Versions/3.12/bin/python3:*)",
+      "Bash(http://localhost:5001/process-month)"
+    ]
+  }
+}

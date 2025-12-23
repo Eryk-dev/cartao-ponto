@@ -1,0 +1,29 @@
+# Dependências
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Arquivos de teste
+response*.json
+teste/
+
+# Sistema
+.DS_Store
+Thumbs.db
