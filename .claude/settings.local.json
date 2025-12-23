@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv:*)",
+      "Bash(GIT_SSH_COMMAND=\"ssh -i ~/.ssh/id_ed25519_cartao -o IdentitiesOnly=yes\" git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove API key from code and add .gitignore\n\n- Use environment variable for GEMINI_API_KEY\n- Add .gitignore to prevent sensitive files from being committed\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
