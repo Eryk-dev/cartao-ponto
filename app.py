@@ -25,11 +25,11 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
 # Configurações
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyD4LcBCYvBqJRrOoDtz8w0b4cR026ctFFk"
 TEMPLATE_FILE_PATH = "./Registro Ponto.XLSX"
 # Alias para retrocompatibilidade
 EXCEL_FILE_PATH = TEMPLATE_FILE_PATH
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
 
 def get_extraction_prompt():
     """Prompt otimizado para extração de horários"""
