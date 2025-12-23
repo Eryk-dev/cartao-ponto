@@ -16,6 +16,10 @@ import time
 import zipfile
 import tempfile
 import shutil
+from dotenv import load_dotenv
+
+# Carrega variáveis de ambiente do arquivo .env
+load_dotenv()
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -25,7 +29,7 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
 # Configurações
-GEMINI_API_KEY = "AIzaSyD4LcBCYvBqJRrOoDtz8w0b4cR026ctFFk"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TEMPLATE_FILE_PATH = "./Registro Ponto.XLSX"
 # Alias para retrocompatibilidade
 EXCEL_FILE_PATH = TEMPLATE_FILE_PATH
